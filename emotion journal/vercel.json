@@ -1,5 +1,14 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" }
+  "version": 2,
+  "functions": {
+    "api/analyze.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/analyze",
+      "dest": "/api/analyze.js"
+    }
   ]
 }
